@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+  background: #474d48;
+  color: rgb(7, 207, 57);
+  padding: 1em 0;
+  font-style: italic ;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: rgb(57, 212, 25);
+  text-decoration: none;
+}
+header {
+  background: #eee;
+  padding: 3em 1em;
+  text-align: center; 
+  font-style: italic;
+}
+section {
+  max-width: 960px;
+  margin: 2em auto;
+  padding: 0 1em;
+  font-style: italic;
+}
+.project-card {
+  background: rgb(236, 233, 233);
+  padding: 1em;
+  margin-bottom: 1em;
+  border-left: 4px solid rgb(40, 168, 168);
+  color: #251f1f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-style: italic;
+}
+
+input,
+textarea,
+button {
+  padding: 0.7em;
+  font-size: 1em;
+  border: 1px solid #751b1b;
+  background-color: rgb(226, 236, 229);
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #3c0e68;
+  color: white;
+}
+
+</style>
+<script>function scrollToContact() {
+  document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}</script>
+  
+<body>
+     <nav>
+    <div class="container">
+    <h1>MyPortfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li> <br>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+   <header>
+    <h2>Hi, I'm Divya</h2>
+    <p>I am a student</p>
+    <button onclick="scrollToContact()">Contact Me</button>
+  </header>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>I am studying in Bsc Computer Science</p>
+    
+    <section id="projects">
+    <h3>Projects</h3>
+    <div class="project-card">
+      <h4>Portfolio Website</h4>
+      <p>Clean and responsive personal site.</p>
+    </div>
+    <div class="project-card">
+      <h4>Rocking Scissor Game</h4>
+      <p>Using to html,css and Js</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Me</h3>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 divya
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  </section>
+
+</body>
+</html>
